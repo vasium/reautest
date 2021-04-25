@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
-import { ThemeProvider } from "./ThemeContext";
+import { CurrentValue } from "./ThemeContext";
 
 function FunctionContextComponent() {
-  const darkTheme = useContext(ThemeProvider);
+  const darkTheme = useContext(CurrentValue);
+
   const themeStyles = {
     backgroundColor: darkTheme ? "#333" : "#CCC",
     color: darkTheme ? "#CCC" : "#333",
